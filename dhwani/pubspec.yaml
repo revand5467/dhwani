@@ -39,6 +39,10 @@ dependencies:
   flutter_svg: ^1.1.6
   flutter_tts: ^3.6.2
   text_to_speech: ^0.2.3
+  google_sign_in: ^5.4.3
+  firebase_core: ^2.4.1
+  google_nav_bar: ^5.0.6
+  line_icons: ^2.0.1
 
 dev_dependencies:
   flutter_test:
