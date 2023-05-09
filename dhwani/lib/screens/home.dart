@@ -31,6 +31,7 @@ class home extends StatelessWidget {
           return tileWidget(index);
         }),
       ),
+      // bottomNavigationBar: ,
     );
   }
 }

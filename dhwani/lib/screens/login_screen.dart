@@ -1,3 +1,4 @@
+import 'package:dhwani/screens/bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -82,7 +83,7 @@ class buildProfileView extends StatelessWidget {
         ),
         ElevatedButton(
             onPressed: () {
-              Get.to(home());
+              Get.to(Example());
             },
             child: Text("Go to tiles"))
       ],

@@ -43,6 +43,14 @@ dependencies:
   firebase_core: ^2.4.1
   google_nav_bar: ^5.0.6
   line_icons: ^2.0.1
+  easy_search_bar: ^2.4.2
+  speech_to_text: ^6.1.1
+  avatar_glow: ^2.0.2
+  highlight_text: ^1.6.0
+  learning_translate: ^0.0.4
+  flutter_translate: ^4.0.3
+  translate: ^1.0.0
+  translator: ^0.1.7
 
 dev_dependencies:
   flutter_test:

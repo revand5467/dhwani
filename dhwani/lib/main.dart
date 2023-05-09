@@ -1,8 +1,12 @@
+import 'package:dhwani/screens/bottom_bar.dart';
 import 'package:dhwani/screens/home.dart';
 import 'package:dhwani/screens/login_screen.dart';
+import 'package:dhwani/screens/search.dart';
+import 'package:dhwani/screens/speech_to_text.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../screens/bottom_bar.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +34,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      // home: login(),
       home: login(),
+      //  home: Search(),
     );
   }
 }
