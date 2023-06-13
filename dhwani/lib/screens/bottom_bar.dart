@@ -7,11 +7,14 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
 
 import '../widgets/tile_widget.dart';
+import '../controller/bottom_bar.dart';
 
 class Example extends StatefulWidget {
   @override
   _ExampleState createState() => _ExampleState();
 }
+
+final Bottom controller = Get.put(Bottom());
 
 class _ExampleState extends State<Example> {
   int _selectedIndex = 0;
@@ -94,16 +97,17 @@ class _ExampleState extends State<Example> {
                 ),
                 GButton(
                   icon: LineIcons.microphone,
-                  text: 'Voice Assistant',
+                  text: 'Speak',
                   onPressed: () {
                     Get.to(Speech());
                   },
                 ),
               ],
-              selectedIndex: _selectedIndex,
+              selectedIndex: controller.selectedIndex,
               onTabChange: (index) {
                 setState(() {
-                  _selectedIndex = index;
+                  //_selectedIndex = index;
+                  controller.updateIndex(index);
                 });
               },
             ),

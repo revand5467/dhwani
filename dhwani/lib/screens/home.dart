@@ -25,11 +25,19 @@ class home extends StatelessWidget {
           },
         ),
       ),
-      body: GridView.count(
-        crossAxisCount: 2,
-        children: List.generate(4, (index) {
-          return tileWidget(index);
-        }),
+      body: 
+      Container(
+        child: GridView.builder(
+          itemCount: 2,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(  
+                  crossAxisCount: 1,  
+                  crossAxisSpacing: 4.0,  
+                  mainAxisSpacing: 4.0 
+          ),
+          itemBuilder: (BuildContext context, int index) { 
+            return tileWidget(index);
+            },
+        ),
       ),
       // bottomNavigationBar: ,
     );

@@ -80,6 +80,9 @@ flutter:
     - assets/images/bat.svg
     - assets/images/beach.svg
     - assets/images/banana.svg
+    - assets/images/eat_,_to.svg
+    - assets/images/sleep_on_side_,_to.svg
+    - assets/images/slp.svg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

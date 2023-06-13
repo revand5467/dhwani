@@ -32,7 +32,8 @@ Widget tileWidget(int index) {
     child: Card(
       child: SvgPicture.asset(demo[index].image,
           // color: Colors.black,
-          semanticsLabel: demo[index].description),
+          semanticsLabel: demo[index].description
+          ),
     ),
   );
 }
